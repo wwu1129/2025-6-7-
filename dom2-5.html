@@ -1,0 +1,29 @@
+</head>
+<body>
+<div>
+    <button onclick="changeToAbout();">關於我</button>
+    <button onclick="changeToExps();">學經歷</button>
+</div>
+<br/>
+    <div id="about">大家好,我是王唯毓</div>
+    <div id="exps" style="display:none;">我是南台科技大學資工系的學生</div>
+    <script>
+        function changeToAbout() {
+            let aboutDiv = document.querySelector('#about');
+            let expsDiv = document.querySelector('#exps');
+            aboutDiv.style.display = "block";
+            expsDiv.style.display = "none";
+        }
+
+        function changeToExps() {
+            let aboutDiv = document.querySelector('#about');
+            let expsDiv = document.querySelector('#exps');
+            aboutDiv.style.display = "none";
+            expsDiv.style.display = "block";
+        }
+    </script>
+
+
+        
+</body>
+</html>
